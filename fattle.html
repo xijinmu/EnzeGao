@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fattle Dataset</title>
+    <link rel="stylesheet" href="fattle.css">
+    <script>
+        window.onload = function(){
+            var str = "";
+            var  elementUl =document.getElementById('bodyid');
+            for (var i = 1; i <=21; i++) {
+                str += '<img class="img_fruit" src="';
+                str += './Fattle/拼接结果/'+i+'ww.jpg" alt="" style="width:100%;height:auto;margin-left:20px;margin-top:20px;">';
+                str+='<span style="font-size：20px; margin-left:80px;">Hazy Image</span>';
+                str+='<span style="font-size：20px; margin-left:180px;">MSCNN</span>';
+                str+='<span style="font-size：20px; margin-left:220px;">He</span>';
+                str+='<span style="font-size：20px; margin-left:200px;">DehazeNet</span>';
+                str+='<span style="font-size：20px; margin-left:180px;">Zhu</span>';
+                str+='<span style="font-size：20px; margin-left:250px;">Ours</span>';  
+            }
+            elementUl.innerHTML += str;//添加至父节点内
+        }
+    </script>
+</head>
+<body id="bodyid" style="width:80%;height:auto; background-image: url(./background/background.jpeg); margin:auto">
+    <!-- <img src="./Fattle/拼接结果/对比aerial_input.jpgDehaze.jpg" id="img">
+    <img src="./Fattle/拼接结果/对比castle_input.jpgDehaze.jpg" id="img"> -->
+
+</body>
+</html>
